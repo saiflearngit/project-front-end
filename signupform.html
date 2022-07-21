@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesignup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <img id="logo" src="gym-logo-template-design-04d583c8ca3558ea0ea21763a57e7ba6_screen-removebg-preview.png" alt="" >
+        <h1>MY GYM</h1>
+        <a id="home" href="index.html">home</a>
+        
+
+    </div>
+     <div class="welcome" id="welcome" style="display: none ; text-align: center;">
+    <h1  >WELCOME YOU ARE A MEMBER</h1>
+    <p>go back to <a href="index.html">home page</a></p>
+    </div>
+
+    <div class="form" id="form">
+        <label for="name">name:</label>
+        <div class="input">
+        <input type="text" id="name" >
+        <button onclick="verif1()"><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+        <span id="V_nom" style="display: none;">*Veuillez vérifier votre nom</span>
+       
+        <label for="tel">tel:</label>
+        <div class="input">
+        <input type="text" id="tel" >
+        <button onclick="verif2()"><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+        <span id="V_tel" style="display: none;">*Veuillez vérifier votre tel</span>
+        <div>
+            <h2>classes to join</h2>
+            <input value="140" type="checkbox" id="boxing">
+            <label for="boxing"> boxing</label>
+            <input type="checkbox" id="yoga" value="70">
+            <label for="yoga"> yoga</label>
+            <input type="checkbox" id="bodybuilding" value="60">
+            <label for="bodybuilding"> bodybuilding</label>
+            <input type="checkbox" id="zumba" value="50">
+            <label for="zumba"> zumba</label>
+            <input type="checkbox" id="karate" value="40">
+            <label for="karate"> karate</label>
+        </div>
+        <div>
+            <button onclick="totalprice()"> membership price </button> : <span id="total"></span>
+        </div>
+        <button onclick="welcome()" >confirm</button>
+    </div>
+    <div class="contact">
+        <div>
+        <div class="tel">tel : ************</div>
+        <div class="email">email : **********@gmail.com</div>
+        <div class="address">address : *************</div>
+        </div>
+        <div>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
